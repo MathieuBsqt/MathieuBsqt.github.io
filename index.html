@@ -28,7 +28,6 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
                     </ul>
                 </div>
             </div>
@@ -37,17 +36,19 @@
         <header class="masthead bg-primary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
-                <img class="masthead-avatar mb-5" src="assets/img/avataaars.svg" alt="..." />
+                <img class="masthead-avatar mb-5" src="assets/img/logov3.svg" alt="..." />
                 <!-- Masthead Heading-->
                 <h1 class="masthead-heading text-uppercase mb-0">Mathieu BUSQUET</h1>
-                <p class="masthead-subheading font-weight-light mb-0">Machine Learning Engineer</p>
+                <p class="masthead-subheading font-weight-light mb-0">Machine Learning Engineer at OVHcloud</p>
                 <!-- Icon Divider-->
                 <div class="divider-custom divider-light">
                     <div class="divider-custom-line"></div>
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <!-- Masthead Subheading-->
+
+                <!-- Profile description-->
+                 <div class="presentation">Hi there 👋 <br>I am an engineering student. I love working with Data & AI. You will find below some projects that I realized !</div>
 
                 <!-- Social Icons-->
                 <div class="col-lg-4 mb-5 mb-lg-0">
@@ -73,14 +74,18 @@
                 </div>
                 <!-- Portfolio Grid Items-->
                 <div class="row justify-content-center">
-                    <p class="">Machine Learning / Data Science</p>
+                    <div class="project-categories">Machine Learning / Data Science</div>
                     <!-- Portfolio Item 1-->
                     <div class="col-md-6 col-lg-4 mb-5">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                            <!-- Green Hover -->
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/cabin.png" alt="..." />
+                            <img class="img-fluid" src="assets/img/portfolio/tumor_seg.gif" alt="tumor_segmentation" />
+                            <div class="project-title">Brain tumors image segmentation</div>
+                            <div class="project-tools">U-Net, Tensorflow, Keras & Streamlit</div>
+                            <div class="project-desc">Tensorflow, Keras & Streamlit</div>
                         </div>
                     </div>
                     <!-- Portfolio Item 2-->
@@ -89,7 +94,10 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/cake.png" alt="..." />
+                            <img class="img-fluid" src="assets/img/portfolio/LLaMA2_finetuning.png" alt="..." />
+                            <div class="project-title">Fine-Tuning LLaMA 2</div>
+                            <div class="project-tools">QLoRA & PEFT</div>
+                            <div class="project-desc">Unlock the full potential of LLaMA 2 by fine-tuning it on a specific dataset</div>
                         </div>
                     </div>
                     <!-- Portfolio Item 3-->
@@ -98,10 +106,43 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="assets/img/portfolio/circus.png" alt="..." />
+                            <video controls autoplay class="img-fluid" src="assets/img/portfolio/Speech_To_Text_demo_HD_part_1.mp4" alt="..." />
+                        </div>
+                        <div class="project-title">Speech to text app</div>
+                        <div class="project-tools">Hugging Face Transformers, pyannote.audio, PyTorch & Streamlit</div>
+                        <div class="project-desc">Creation of an app to transcribe audio and video files into English, with numerous options such as diarization, summarization and video subtitle generation.</div>
+                    </div>
+
+                    <!-- Portfolio Item 4-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                            <!-- Green Hover -->
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/cake.png" alt="" />
+                            <div class="project-title">Image generation</div>
+                            <div class="project-tools">DCGAN, PyTorch</div>
+                            <div class="project-desc">Tensorflow, Keras & Streamlit</div>
                         </div>
                     </div>
-                    <p>Data Visualization</p>
+                    <!-- Portfolio Item 2-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/sasha.jpg" alt="..." />
+                            <div class="project-title">Pokemon Classifier</div>
+                            <div class="project-tools">CNN VGG</div>
+                            <div class="project-desc">Multi-Class Classification</div>
+                        </div>
+                    </div>
+
+
+
+                    <!-- Portfolio 2nd project category -->
+                    <div class="project-categories">Data Visualization</div>
                     <!-- Portfolio Item 4-->
                     <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
                         <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
@@ -132,32 +173,6 @@
                 </div>
             </div>
         </section>
-        <!-- About Section-->
-        <section class="page-section bg-primary text-white mb-0" id="about">
-            <div class="container">
-                <!-- About Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom divider-light">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- About Section Content-->
-                <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead">Hi there 👋 <br>I am an engineering student. I love working with Data & AI. You will find above some projects that I realized !</p></div>
-                    <div class="col-lg-4 me-auto"><p class="lead">I am currently a Machine Learning Engineer at OVHcloud.</p></div>
-                </div>
-                <!-- About Section Button-->
-                <!--<div class="text-center mt-4">-->
-                <!--    <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">-->
-                <!--        <i class="fas fa-download me-2"></i>-->
-                <!--        Free Download!-->
-                <!--    </a>-->
-                <!--</div>-->
-            </div>
-        </section>
-
 
         <!-- Portfolio Modals-->
         <!-- Portfolio Modal 1-->
@@ -352,6 +367,16 @@
                 </div>
             </div>
         </div>
+
+        <!-- About Section Button-->
+        <!--<div class="text-center mt-4">-->
+        <!--    <a class="btn btn-xl btn-outline-light" href="https://startbootstrap.com/theme/freelancer/">-->
+        <!--        <i class="fas fa-download me-2"></i>-->
+        <!--        Free Download!-->
+        <!--    </a>-->
+        <!--</div>-->
+
+
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->

@@ -1283,6 +1283,14 @@ progress {
     flex: 0 0 auto;
     width: 33.33333333%;
   }
+  .col-lg-4.ms-auto{
+      text-align: justify;
+      text-justify: inter-word;
+    }
+  .col-lg-4.me-auto{
+        text-align: justify;
+        text-justify: inter-word;
+      }
   .col-lg-5 {
     flex: 0 0 auto;
     width: 41.66666667%;
@@ -11017,6 +11025,44 @@ html {
 .portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
   font-size: 1.5rem;
 }
+
+.presentation{
+    margin-bottom:2rem;
+    font-size: 1.2rem;
+}
+
+.project-categories{
+    font-size: 2rem;
+    opacity: 0.8;
+    letter-spacing:0.125rem;
+    text-transform:uppercase;
+    margin-bottom:1rem;
+    text-align:center;
+}
+
+.project-title{
+    font-size: 1.25rem;
+    opacity: 0.7;
+    text-transform:uppercase;
+    text-align: center;
+    margin-bottom:1rem;
+    margin-top:1rem;
+    }
+
+.project-tools{
+    font-size: 1rem;
+    opacity: 0.5;
+    text-transform:uppercase;
+    text-align: center;
+    margin-bottom:1rem;
+    }
+
+.project-desc{
+    font-size: 1rem;
+    opacity: 0.7;
+    text-align: center;
+    margin-bottom:1rem;
+    }
 
 .portfolio-modal .btn-close {
   color: #1abc9c;
