@@ -52,3 +52,48 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+
+// Make ribbon appear only if user scrolls
+window.addEventListener('scroll', function() {
+    var ribbon = document.getElementById('ribbon');
+    if (window.scrollY > 0) {
+        ribbon.style.display = 'block';
+    } else {
+        ribbon.style.display = 'none';
+    }
+});
+
+
+// Retrieve Portfolio elements (title + image and display them once click instead of rewriting them in html code
+// Get the elements to be clicked
+const portfolioItems = document.querySelectorAll('.portfolio-item');
+// Add click event listener to each element
+portfolioItems.forEach(item => {
+    item.addEventListener('click', function() {
+        // Get the image and text from the clicked portfolio item
+        const imageSrc = this.querySelector('img').getAttribute('src');
+        const projectTitle = this.querySelector('.project-title').textContent;
+        const projectTools = this.querySelector('.project-tools').textContent;
+        const projectDesc = this.querySelector('.project-desc').textContent;
+
+        // Print the image source and text in the browser console
+        //console.log('Image Source:', additionalInfoContent);
+        //console.log('Project Title:', projectTitle);
+        //console.log('Project Tools:', projectTools);
+        //console.log('Project Description:', projectDesc);
+
+        // Set the retrieved data to the portfolio-modal with ID portfolioModal1
+        const portfolioModalImage = document.getElementById('portfolioModalImage');
+        portfolioModalImage.setAttribute('src', imageSrc);
+
+        // Set title
+        const portfolioModalTitle = document.getElementById('portfolioModalTitle');
+        portfolioModalTitle.innerHTML = projectTitle;
+
+        const portfolioModalDesc = document.getElementById('portfolioModalDesc');
+        portfolioModalDesc.innerHTML = projectDesc;
+
+
+    });
+});

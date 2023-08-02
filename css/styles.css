@@ -10841,6 +10841,7 @@ html {
 .page-section {
   padding: 6rem 0;
 }
+
 .page-section .page-section-heading {
   font-size: 2.25rem;
   line-height: 2rem;
@@ -11029,6 +11030,23 @@ html {
 .presentation{
     margin-bottom:2rem;
     font-size: 1.2rem;
+}
+
+.ribbon-section {
+  padding: 2rem 0;
+}
+
+.ribbon {
+    /* Styles pour le ruban */
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999; /* Pour s'assurer que le ruban passe au-dessus des autres éléments */
 }
 
 .project-categories{
