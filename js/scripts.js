@@ -97,3 +97,30 @@ portfolioItems.forEach(item => {
 
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const imageContainer = document.getElementById('image-container');
+    console.log(imageContainer)
+    const imageFileNames = [
+      'assets/img/portfolio/airquality/interface.png',
+      'assets/img/portfolio/airquality/calendar_view.png',
+      'assets/img/portfolio/airquality/graph1.png',
+      'assets/img/portfolio/airquality/graph2.png',
+      // Add more image file paths as needed
+    ];
+
+    let currentImageIndex = 0;
+    const imgElement = imageContainer.querySelector('img');
+
+    function changeImage() {
+      const imagePath = imageFileNames[currentImageIndex];
+      imgElement.src = imagePath;
+
+      // Increment the currentImageIndex for the next image
+      currentImageIndex = (currentImageIndex + 1) % imageFileNames.length;
+    }
+
+    // Set the interval to change the image every 1 second (1000 milliseconds)
+    setInterval(changeImage, 2500);
+  });
